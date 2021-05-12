@@ -46,7 +46,9 @@ USER_DEFINE_APPS = [
     'todos.apps.TodosConfig',
 ]
 
-THIRD_PARTY_APPS = []
+THIRD_PARTY_APPS = [
+    'rest_framework'
+]
 
 INSTALLED_APPS = BUILT_IN_APPS + USER_DEFINE_APPS + THIRD_PARTY_APPS
 
@@ -61,6 +63,12 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'root.urls'
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny'
+    ]
+}
 
 TEMPLATES = [
     {

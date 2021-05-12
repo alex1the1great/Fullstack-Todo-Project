@@ -1,0 +1,15 @@
+# backend --
+
+todo_backend/.env
+todo_backend/.idea/
+
+# virtual environment
+*venv*
+
+*db.sqlite3*
+
+# cpython cache directory
+*__pycache__*
+*.pyc
+
+# backend -->

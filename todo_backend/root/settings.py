@@ -42,7 +42,9 @@ BUILT_IN_APPS = [
     'django.contrib.staticfiles',
 ]
 
-USER_DEFINE_APPS = []
+USER_DEFINE_APPS = [
+    'todos.apps.TodosConfig',
+]
 
 THIRD_PARTY_APPS = []
 
